@@ -1,0 +1,341 @@
+
+.home-banner{
+    height: calc(100vh - 80px);
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include pad{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+    }
+    @include mobile{
+        height: calc(100vh - 176px);
+    }
+
+    &__titles{
+        text-align: right;
+        height: calc(100vh - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include mobile{
+            height: calc(100vh - 176px);
+        }
+    }
+    &__subTitle{
+        color: $color-primary-100;
+        font-size: $font-size-2-2-5;
+        @include mobile{
+            font-size: $font-size-base;
+        }
+    }
+    &__title{
+        color: $color-primary-100;
+        font-size: $font-size-4;
+        font-weight: bold;
+
+        margin-bottom: $spacer-0-5;
+        @include mobile{
+            font-size:  $font-size-1-5;
+        }
+    }
+    &__btn{
+        font-size: $font-size-1-2-5;
+        color: $color-white;
+        background-color: $color-primary;
+        padding: 6px 12px;
+        cursor: pointer;
+    }
+}
+
+.home-features{
+    background-color: $color-secondary;
+
+    padding-top: $spacer-10;
+    padding-bottom: $spacer-10;
+    
+    @include pad{
+        padding-left: $spacer-3;
+        padding-right: $spacer-3;
+    }
+
+    @include mobile-small{
+        padding-top: $spacer-5;
+        padding-bottom: $spacer-5;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &__title{
+        color: $color-primary-100;
+        font-size: $font-size-3;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: $spacer-3;
+
+        @include mobile-small{
+            font-size: $font-size-1-5;
+        }
+    }
+
+    &-cardList{
+        display: flex;
+        gap: $spacer-3;
+        @include pad{
+            flex-wrap: wrap;
+        }
+    }
+    &-card{
+        width: calc(25% - 18px);
+        @include pad{
+            width: calc(50% - 12px);
+        }
+        @include mobile-small{
+            width: calc(100% - 24px);
+        }
+        &__image-wrap{
+            text-align: center;
+            margin-bottom: $spacer-2;
+        }
+        &__image{
+            width: 100px;
+        }
+        &__title{
+            font-size: $font-size-1-5;
+            font-weight: bold;
+            color: $color-primary-100;
+            text-align: center;
+            margin-bottom: $spacer;
+        }
+
+        // &__description{
+            
+        // }
+    }
+}
+
+.home-classic{
+    padding-top: $spacer-10;
+    padding-bottom: $spacer-10;
+    &__title{
+        color:$color-primary-100;
+        font-size: $font-size-3;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: $spacer-6;
+
+        @include mobile{
+            font-size: $font-size-1-5;
+            margin-bottom: $spacer-3;
+        }
+    }
+    &__list{
+        display: flex;
+        gap: $spacer-3;
+        @include pad{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    &__card{
+        width: calc(33% - 16px);
+        @include pad{
+            width: calc(100% - 24px);
+        }
+    }
+
+    &__card-img-wrap{
+        text-align: center;
+        // width: 100%;
+        margin-bottom: $spacer;
+    }
+
+    &__card-img{
+        // max-width: 416px;
+
+        @include pad{
+            max-width: 336px;
+        }
+    }
+
+    &__card-title{
+        font-size: $font-size-3;
+        font-style: italic;
+        text-align: center;
+        color: $color-primary;
+        font-weight: 900;
+    }
+}
+
+.home-coBranded{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-top: $spacer-10;
+    padding-bottom: $spacer-10;
+
+    @include pad{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true);
+        padding-left: $spacer-3;
+        padding-right: $spacer-3;
+    }
+
+    @include mobile{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true);
+        background-position-x: center;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: $spacer-5;
+        padding-bottom: $spacer-5;
+    }
+
+    &__title{
+        color: $color-white;
+        font-size: $font-size-3;
+        font-weight: bold;
+        text-align: center;
+
+        margin-bottom: $spacer-6;
+
+        @include mobile-small{
+            font-size: $font-size-1-5;
+        }
+    }
+
+    &__wrapper{
+        display: flex;
+
+        @include pad{
+            flex-wrap: wrap;
+            gap: $spacer-3
+        }
+    }
+
+    &__caption{
+        color: $color-primary;
+        font-size: $font-size-3;
+        font-weight: 900;
+        font-style: italic;
+        background-color: $color-white;
+        text-align: center;
+        padding-top: $spacer;
+        padding-bottom: $spacer;
+    }
+}
+
+.home-recommendation{
+    padding-top: $spacer-10;
+    padding-bottom: $spacer-10;
+    &__title{
+        color: $color-primary-100;
+        font-size: $font-size-3;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: $spacer-6;
+
+        @include mobile-small{
+            font-size: $font-size-1-5;
+        }
+    }
+
+    &__cardList{
+        display: flex;
+        gap: $spacer-3;
+
+        @include pad{
+            flex-wrap: wrap;
+        }
+    }
+
+    &__card{
+        border: 1px solid $color-light;
+        border-radius: 4px;
+        box-shadow: 0px 2px 6px #00000029;
+
+        @include pad{
+            width: calc(50% - 12px);
+        }
+
+        @include mobile-small{
+            width: 100%;
+        }
+    }
+    
+    &__cardBody{
+        padding: $spacer-2;
+        display: flex;
+        flex-direction: column;
+        height: 205px;
+    }
+
+    &__cardTitle{
+        font-weight: 500;
+        margin-bottom: $spacer;
+    }
+
+    &__cardDate{
+        color: $color-dark;
+        font-size: 14px;
+        margin-top: auto;
+    }
+}
+
+.home-contactUs{
+    padding-top: $spacer-10;
+    padding-bottom: $spacer-10;
+    background-color: $color-secondary;
+
+    @include mobile-small{
+        padding-top: $spacer-5;
+        padding-bottom: $spacer-5;
+    }
+
+    &__wrapper{
+        width: 50%;
+        margin: 0 auto;
+        @include pad{
+            width: calc(10 / 12) * 100%;
+        }
+        @include mobile-small{
+            width: 100%;
+        }
+    }
+
+    &__title{
+        color: $color-primary-100;
+        font-size: $font-size-3;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: $spacer-6;
+
+        @include mobile-small{
+            font-size: $font-size-1-5;
+        }
+    }
+
+    &__description{
+        font-size: $font-size-1-2-5;
+        margin-bottom: $spacer-3;
+    }
+
+    &__button{
+        color:$color-white;
+        background-color: $color-primary;
+        padding-top: $spacer-2;
+        padding-bottom: $spacer-2;
+
+        cursor: pointer;
+
+        display: block;
+        width: 66%;
+        margin: 0 auto;
+
+        @include pad{
+            width: 60%;
+        }
+
+        @include mobile-small{
+            width: 100%;
+        }
+    }
+}

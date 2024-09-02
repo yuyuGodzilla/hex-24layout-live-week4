@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>眼鏡官網(Vite)-W4 24切版直播班</title>
+
+    <!-- 字體載入: Roboto 、 Noto Sans TC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Material Symbols -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <div class="sub-navbar__wrapper mb-3 mb-md-1 mb-sm-2">
+            <div class="container">
+                <nav class="sub-navbar">
+                    <ul class="sub-navbar__list">
+                        <li class="sub-navbar__item"><a href="#" class="sub-navbar__link">最新消息</a></li>
+                        <li class="sub-navbar__item"><a href="#" class="sub-navbar__link">特別企劃</a></li>
+                        <li class="sub-navbar__item"><a href="#" class="sub-navbar__link">新品上市</a></li>
+                        <li class="sub-navbar__item"><a href="#" class="sub-navbar__link">鏡框小知識</a></li>
+                    </ul>
+                    <a href="#">
+                        <span class="material-symbols-outlined sub-navbar__search">
+                            search
+                        </span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <main class="blog-post">
+            <div class="container">
+                <nav class="blog-post__breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb__item"><a href="./index.html" class="breadcrumb__link">首頁</a></li>
+                        <li class="breadcrumb__item"><a href="./blog.html" class="breadcrumb__link">部落格</a></li>
+                        <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">特別企劃</a></li>
+                        <li class="breadcrumb__item"><a href="./blog-post.html"
+                                class="breadcrumb__link breadcrumb__link--active">情人特別企劃</a></li>
+                    </ol>
+                </nav>
+                <ul class="blog-post__tags">
+                    <li class="tag blog-post__tag"><a href="#">#special</a></li>
+                    <li class="tag blog-post__tag"><a href="#">#event</a></li>
+                </ul>
+                <div class="blog-post__body">
+                    <div class="blog-post__content">
+                        <h1 class="blog-post__title">情人特別企劃</h1>
+                        <h2 class="blog-post__subTittle">2020 Valentine’s Special</h2>
+                        <figure class="blog-post__figure">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blogpage-1.png?raw=true" alt="圖1" class="blog-post__img">
+                            <figcaption class="blog-post__figcaption">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br> 本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</figcaption>
+                        </figure>
+                        <figure class="blog-post__figure">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blogpage-2.png?raw=true" alt="圖2" class="blog-post__img">
+                            <figcaption class="blog-post__figcaption">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br> 本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</figcaption>
+                        </figure>
+                        <figure class="blog-post__figure">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blogpage-3.png?raw=true" alt="圖3" class="blog-post__img">
+                            <figcaption class="blog-post__figcaption">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br> 本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</figcaption>
+                        </figure>
+                        <figure class="blog-post__figure">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blogpage-4.png?raw=true" alt="圖4" class="blog-post__img">
+                            <figcaption class="blog-post__figcaption">2/14(五)-2/20(日)<br> 至本店單筆消費滿2980元, 就送情人節限定眼鏡盒1個<br> 期間優惠還有~~持他牌鏡框更換鏡片<br> 薄型非球面鏡片折300元<br> 濾藍光鏡片折500元<br> 快快帶上另一半 讓彼此每一次睜開眼，都被愛的視線包圍!</figcaption>
+                        </figure>
+                        <div class="blog-post__share">
+                            <p class="blog-post__shareText">Share</p>
+                            <a href="#"><img class="blog-post__shareImg" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-facebook.png?raw=true" alt="fb"></a>
+                            <a href="#"><img class="blog-post__shareImg" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-instagram.png?raw=true" alt="ig"></a>
+                        </div>
+                    </div>
+
+                    <aside class="blog-post-aside">
+                        <h3 class="blog-post-aside__title">
+                            <span class="material-symbols-outlined blog-post-aside__label">
+                                label
+                                </span>TAGS
+                        </h3>
+                        <ul class="blog-post-aside__list">
+                            <li class="blog-post-aside__item"><a href="#" class="tag blog-post-aside__tag">#special</a></li>
+                            <li class="blog-post-aside__item"><a href="#" class="tag blog-post-aside__tag">#sale</a></li>
+                            <li class="blog-post-aside__item"><a href="#" class="tag blog-post-aside__tag">#new_item</a></li>
+                            <li class="blog-post-aside__item"><a href="#" class="tag blog-post-aside__tag">#interview</a></li>
+                            <li class="blog-post-aside__item"><a href="#" class="tag blog-post-aside__tag">#trivia</a></li>
+                            <li class="blog-post-aside__item"><a href="#" class="tag blog-post-aside__tag">#news</a></li>
+                            <li class="blog-post-aside__item"><a href="#" class="tag blog-post-aside__tag">#event</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="blog-post-pagination">
+                    <a href="#" class="blog-post-pagination__link"><span class="material-symbols-outlined blog-post-pagination__icon me-1">
+                        arrow_back
+                        </span>上一篇：街頭潮人訪問 1</a>
+                    <a href="#" class="blog-post-pagination__link">下一篇：街頭潮人訪問 2<span class="material-symbols-outlined blog-post-pagination__icon ms-1">
+                        arrow_forward
+                        </span></a>
+                </div>
+            </div>
+        </main>
+
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

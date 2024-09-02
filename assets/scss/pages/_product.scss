@@ -1,0 +1,178 @@
+.productOptical-banner {
+  display: flex;
+
+  &__block {
+    width: 50%;
+    height: 296px;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-1.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &:last-child {
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-2.png?raw=true);
+    }
+    @include pad {
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-1.png?raw=true);
+
+      &:last-child {
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-2.png?raw=true);
+      }
+    }
+
+    @include mobile-small {
+      height: 136px;
+    }
+  }
+}
+
+.productOptical-products {
+  padding-top: $spacer-10;
+  padding-bottom: $spacer-10;
+
+  @include mobile-small {
+    padding-top: $spacer-5;
+    padding-bottom: $spacer-8;
+  }
+
+  &__titles {
+    text-align: center;
+    margin-bottom: $spacer-4;
+
+    @include mobile-small {
+      margin-bottom: $spacer-3;
+    }
+  }
+  &__title {
+    font-size: 42px;
+    font-weight: 500;
+
+    @include mobile-small {
+      font-size: $font-size-1-5;
+    }
+  }
+  &__subTitle {
+    font-size: $font-size-2;
+    @include mobile-small {
+      font-size: $font-size-1-5;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: $spacer-3;
+    row-gap: $spacer-10;
+    margin-bottom: $spacer-10;
+
+    @include pad {
+      row-gap: $spacer-5;
+    }
+
+    @include mobile-small {
+      row-gap: $spacer-3;
+      margin-bottom: $spacer-8;
+    }
+  }
+  &__item {
+    width: calc(25% - 18px);
+
+    @include pad {
+      width: calc(50% - 12px);
+    }
+
+    @include mobile-small {
+      width: 100%;
+    }
+  }
+}
+
+// 以下sunglasses 太陽眼鏡頁面
+.productSunglasses-banner {
+  display: flex;
+
+  &__block {
+    width: 50%;
+    height: 296px;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-3.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &:last-child {
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-4.png?raw=true);
+    }
+    @include pad {
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-3.png?raw=true);
+
+      &:last-child {
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-4.png?raw=true);
+      }
+    }
+
+    @include mobile-small {
+      height: 136px;
+    }
+  }
+}
+
+.productSunglasses-products {
+  padding-top: $spacer-10;
+  padding-bottom: $spacer-10;
+
+  @include mobile-small {
+    padding-top: $spacer-5;
+    padding-bottom: $spacer-8;
+  }
+
+  &__titles {
+    text-align: center;
+    margin-bottom: $spacer-4;
+
+    @include mobile-small {
+      margin-bottom: $spacer-3;
+    }
+  }
+  &__title {
+    font-size: 42px;
+    font-weight: 500;
+
+    @include mobile-small {
+      font-size: $font-size-1-5;
+    }
+  }
+  &__subTitle {
+    font-size: $font-size-2;
+    @include mobile-small {
+      font-size: $font-size-1-5;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: $spacer-3;
+    row-gap: $spacer-10;
+    margin-bottom: $spacer-10;
+
+    @include pad {
+      row-gap: $spacer-5;
+    }
+
+    @include mobile-small {
+      row-gap: $spacer-3;
+      margin-bottom: $spacer-8;
+    }
+  }
+  &__item {
+    width: calc(33.3333% - 16px);
+
+    @include pad {
+      width: calc(50% - 12px);
+    }
+
+    @include mobile-small {
+      width: 100%;
+    }
+  }
+}

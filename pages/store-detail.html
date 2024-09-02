@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>眼鏡官網(Vite)-W4 24切版直播班</title>
+
+    <!-- 字體載入: Roboto 、 Noto Sans TC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Material Symbols -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <main class="store-detail">
+            <div class="container">
+                <h1 class="store-detail__title">門市據點</h1>
+
+                <div class="store-detail__dropdownWrapper">
+                    <label for="#store-detailDropdown" class="store-detail__dropdownLabel">選擇地區</label>
+                    <select class="store-detail__dropdown" name="store-detail" id="store-detailDropdown">
+                        <option value="台北中山旗艦店" selected>台北中山旗艦店</option>
+                        <option value="台北綠園店">台北綠園店</option>
+                        <option value="台中清水旗艦店">台中清水旗艦店</option>
+                        <option value="高雄中正形象店">高雄中正形象店</option>
+                        <option value="高雄夢時代店">高雄夢時代店</option>
+                    </select>
+                </div>
+
+                <div class="store-detail__content">
+                    <div class="store-detail__cardWrapper">
+                        <div class="stores-card store-detail__cardFlex">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true"
+                                alt="店家1" class="stores-card__img">
+                            <div class="stores-card__details">
+                                <h3 class="stores-card__title">台北中山旗艦店</h3>
+                                <ul class="stores-card__infoList">
+                                    <li class="stores-card__infoItem"><span
+                                            class="material-symbols-outlined stores-card__infoIcon">
+                                            call
+                                        </span>電話：(02)000-1234</li>
+                                    <li class="stores-card__infoItem"><span class="material-symbols-outlined stores-card__infoIcon">
+                                        schedule
+                                        </span>營業時間：10:00-21:00</li>
+                                    <li class="stores-card__infoItem"><span class="material-symbols-outlined stores-card__infoIcon">
+                                        location_on
+                                        </span>地址：台北市中山區南京東路25巷2-1號</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="store-detail__map" src="../assets/images/螢幕快照 2020-02-13 16.35.44.png" alt="">
+                </div>
+            </div>
+        </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>

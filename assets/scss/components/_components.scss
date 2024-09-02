@@ -1,0 +1,245 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: $spacer-8;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  @include mobile {
+    width: 100%;
+    gap: 0;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  &__item {
+    @include mobile {
+      width: 50%;
+    }
+  }
+  &__btn {
+    width: 100%;
+    font-size: $font-size-1-2-5;
+    @include mobile {
+      border: 1px solid $color-white;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      font-size: $font-size-base;
+      text-align: center;
+    }
+  }
+}
+
+.sub-navbar {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  &__wrapper {
+    background-color: $color-primary-100;
+  }
+
+  &__list {
+    display: flex;
+    column-gap: $spacer-6;
+
+    @include mobile {
+      width: 100%;
+      justify-content: space-between;
+      column-gap: $spacer-3;
+    }
+  }
+
+  &__item {
+    color: $color-white;
+    font-weight: bold;
+    font-size: $font-size-1-2-5;
+
+    @include mobile {
+      font-size: $font-size-base;
+    }
+  }
+
+  &__search {
+    color: $color-white;
+    font-size: 29px;
+
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.form {
+  &__label {
+    display: block;
+    margin-bottom: $spacer;
+  }
+
+  &__control {
+    width: 100%;
+    padding-top: 6px;
+    padding-left: 12px;
+    padding-bottom: 6px;
+  }
+
+  &__inputTextarea {
+    resize: none;
+  }
+}
+
+.tab-bar {
+  display: flex;
+  &__item {
+    width: calc(1 / 3) * 100%;
+  }
+  &__btn {
+    font-size: $font-size-2;
+    text-align: center;
+    font-weight: 500;
+
+    display: block;
+    padding-top: $spacer-3;
+    padding-bottom: $spacer-3;
+    border-left: 1px solid $color-light-200;
+    border-right: 1px solid $color-light-200;
+    position: relative;
+
+    @include pad {
+      padding-top: $spacer-2;
+      padding-bottom: $spacer-2;
+      font-size: $font-size-1-5;
+    }
+
+    @include mobile-small {
+      font-size: $font-size-base;
+    }
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 0;
+      background-color: $color-primary;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: height 0.2s;
+    }
+    &:hover {
+      opacity: 1;
+      &::after {
+        height: 8px;
+      }
+    }
+
+    &--active {
+      &::after {
+        content: "";
+        width: 100%;
+        height: 8px;
+        background-color: $color-primary;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+.card {
+  &__details {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    font-size: $font-size-1-5;
+  }
+  &__price {
+    font-size: $font-size-1-5;
+    color: $color-primary;
+    font-weight: 500;
+  }
+  &__colors {
+    display: flex;
+    column-gap: $spacer;
+  }
+  &__color {
+    width: 24px;
+    height: 24px;
+    background-color: $color-brown;
+    border-radius: 4px;
+    &:last-child {
+      background-color: $color-brown-100;
+    }
+  }
+}
+
+.pagination {
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    border: 1px solid $color-dark-100;
+  }
+  &__link {
+    display: block;
+    padding-top: $spacer-1-5;
+    padding-bottom: $spacer-1-5;
+    padding-left: $spacer-2;
+    padding-right: $spacer-2;
+
+    font-size: 18px;
+    color: $color-dark-100;
+
+    transition: color 0.3s, background-color 0.3s;
+
+    @include mobile {
+      font-size: $font-family-base;
+    }
+
+    &:hover {
+      opacity: 1;
+      color: $color-white;
+      background-color: $color-black;
+    }
+
+    &--active {
+      color: $color-white;
+      background-color: $color-black;
+    }
+
+    &--next {
+      background-color: $color-light-100;
+    }
+  }
+}
+
+.breadcrumb {
+  display: flex;
+  &__item {
+    &::after {
+      content: "/";
+      margin-left: $spacer-0-5;
+      margin-right: $spacer-0-5;
+    }
+
+    &:last-child::after {
+      content: "";
+    }
+  }
+
+  &__link {
+    &--active {
+      color: $color-primary;
+    }
+  }
+}
+
+.tag{
+  font-size: $font-size-1-5;
+  color: $color-primary;
+  font-weight: bold;
+}
+

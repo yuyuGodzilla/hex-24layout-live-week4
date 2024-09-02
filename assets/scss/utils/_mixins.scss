@@ -1,0 +1,31 @@
+@mixin pad {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile-small {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+// 常見標題的mixin
+@mixin common-title() {
+  font-size: $font-size-3;
+  font-weight: bold;
+  border-left: 8px solid $color-primary-200;
+  padding-left: $spacer-2;
+  margin-bottom: $spacer-4;
+
+  @include mobile {
+    font-size: $font-size-1-5;
+    margin-bottom: $spacer-3;
+  }
+}
